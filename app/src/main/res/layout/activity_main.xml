@@ -7,44 +7,84 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+        <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="숫자로 하는 야구 게임"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#292929"
+            android:textStyle="bold"
+        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:orientation="horizontal"
-        android:weightSum="5"
+        android:weightSum="3"
+        android:padding="5dp"
         >
-
         <EditText
-            android:id="@+id/et_number"
-            android:layout_width="wrap_content"
+            android:id="@+id/et_handrad"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:hint="숫자를 입력해주세요."
-            android:layout_weight="4"
-            android:inputType="number"
-        />
-        <Button
-            android:id="@+id/btn_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="결과확인"
+            android:background="@drawable/ball"
             android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:maxEms="1"
             />
-    </LinearLayout>
-
+        <EditText
+            android:id="@+id/et_ten"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ball"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:maxEms="1"
+            />
+        <EditText
+            android:id="@+id/et_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ball"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:maxEms="1"
+            />
+        </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="확인"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
     <TextView
         android:id="@+id/tv_result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RESULT"
-        android:textColor="#FF0000"
-        android:textSize="15sp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle"
+        android:layout_margin="10dp"
+        android:hint="ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#292929"
         android:textStyle="bold"
-        android:gravity="center"
-
         />
-
-
-
-
 
 </LinearLayout>
